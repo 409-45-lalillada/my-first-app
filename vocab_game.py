@@ -8,9 +8,9 @@ if "ans1_val" not in st.session_state:
 if "ans2_val" not in st.session_state:
     st.session_state.ans2_val = ""
 if "ans3_val" not in st.session_state:
-    st.session_state.ans1_val = ""
+    st.session_state.ans3_val = ""
 if "ans4_val" not in st.session_state:
-    st.session_state.ans2_val = ""
+    st.session_state.ans4_val = ""
 
 
 def reset_game():
@@ -58,7 +58,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4):
 
     st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
 
-    if score == 2:
+    if score == 4:
         st.success("🎉 You win!")
     else:
         st.error("💀 You lose!")
